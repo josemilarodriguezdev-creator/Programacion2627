@@ -6,11 +6,12 @@ package EjerciciosRelacion2;
 
 import java.util.Scanner;
 
-public class Relacion2Ejercicio3incompleto {
+public class Relacion2Ejercicio3 {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
         int cantidad = 0;
+        int numero;
         do {
             System.out.println("Introduce cuantos números vas a querer revisar");
              cantidad = sc.nextInt();
@@ -19,6 +20,16 @@ public class Relacion2Ejercicio3incompleto {
                 System.out.println("debe de ser mayor que positivo o mayor que 0");
             }
         } while (cantidad <=0);
+
+        for (int i = 0; i <cantidad ; i++) {
+            System.out.println("Introduce un numero");
+            numero = sc.nextInt();
+            if (numero % 2 ==0){
+                System.out.println("El numero " + numero + " es par");
+            }else {
+                System.out.println("El numero " + numero + " es inpar");
+            }
+        }
 
     }
 }

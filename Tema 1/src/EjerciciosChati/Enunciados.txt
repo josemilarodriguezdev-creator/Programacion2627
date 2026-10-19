@@ -1,0 +1,121 @@
+
+Ejercicio 1. Múltiplos de un número
+Realizar un programa que muestre por pantalla todos los números comprendidos entre 1 y 150 que sean múltiplos de 5. Para cada número encontrado, deberá mostrar un mensaje indicando que es múltiplo de 5.
+
+Ejercicio 2. Tabla de multiplicar inversa
+Realizar un programa que lea un número entero entre 0 y 10 y visualice su tabla de multiplicar desde el 10 hasta el 0.
+
+Por ejemplo, si el número es 3, deberá aparecer:
+Tabla del 3
+3 * 10 = 30
+3 * 9 = 27
+...
+3 * 0 = 0
+
+
+Si el número introducido no está entre 0 y 10, deberá volver a solicitarse.
+
+Ejercicio 3. Contar números pares e impares
+Realizar un programa que solicite una cantidad positiva de números que se introducirán por teclado. Después, deberá pedir esa cantidad de números e indicar cuántos son pares y cuántos son impares.
+
+Si la cantidad indicada es cero o negativa, deberá volver a solicitarse.
+
+Ejercicio 4. Suma de números pares
+Realizar un programa que lea un número entero estrictamente positivo \(N\) y calcule la suma de todos los números pares comprendidos entre 1 y \(N\).
+
+Si el número introducido no es positivo, deberá volver a solicitarse.
+
+Ejemplo:
+Introduce un número positivo: 8
+La suma de los números pares hasta 8 es: 20
+
+
+Ejercicio 5. Contar positivos, negativos y ceros
+Realizar un programa que solicite números por teclado hasta que se introduzca el número 999. Al finalizar, deberá indicar cuántos números positivos, cuántos negativos y cuántos ceros se han introducido.
+
+Nota: El número 999 sirve para terminar y no debe contabilizarse.
+
+Ejercicio 6. Multiplicación mediante sumas
+Realizar un programa que lea dos números enteros positivos, numeroA y numeroB, y calcule el producto de ambos mediante sumas sucesivas, sin utilizar el operador de multiplicación *.
+
+Si alguno de los números introducidos no es positivo, deberá volver a solicitarse.
+
+Ejercicio 7. Media y cantidad de aprobados
+Realizar un programa que solicite una cantidad positiva de alumnos y, a continuación, introduzca la nota de cada alumno, comprendida entre 0 y 10.
+
+Al finalizar, deberá mostrar la nota media de la clase y la cantidad de alumnos que han aprobado, considerando aprobado una nota mayor o igual que 5.
+
+Tanto la cantidad de alumnos como cada nota deberán validarse. Si un dato es incorrecto, deberá volver a solicitarse.
+
+Ejercicio 8. Número mayor y menor
+Realizar un programa que solicite una cantidad positiva de números por teclado. Una vez introducidos todos, deberá mostrar cuál es el mayor y cuál es el menor de los números introducidos.
+
+Si la cantidad de números es cero o negativa, deberá volver a solicitarse.
+
+Ejercicio 9. Determinar si un número es primo
+Realizar un programa que lea un número entero mayor que 1 y averigüe si es primo.
+
+Un número es primo cuando únicamente tiene dos divisores positivos: el 1 y él mismo.
+
+Si el número introducido es incorrecto, deberá volver a solicitarse.
+
+Ejemplos:
+El número 7 es primo.
+El número 8 no es primo.
+
+
+Ejercicio 10. Calcular una potencia
+Realizar un programa que lea dos números enteros: una base positiva y un exponente positivo o cero. Deberá calcular la potencia sin utilizar operadores de potencia, mediante multiplicaciones sucesivas.
+
+Si alguno de los datos es incorrecto, deberá volver a solicitarse.
+
+Ejemplos:
+Introduce la base: 2
+Introduce el exponente: 4
+El resultado es: 16
+
+
+Nota: Cualquier número elevado a 0 vale 1.
+
+Ejercicio 11. Sumar números hasta introducir cero
+Realizar un programa que solicite números por teclado hasta que se introduzca un cero. Al finalizar, deberá mostrar la suma de todos los números introducidos, sin contar el cero utilizado para terminar.
+
+Los números introducidos podrán ser positivos o negativos.
+
+Ejercicio 12. Contar los divisores de un número
+Realizar un programa que lea un número entero estrictamente positivo y calcule cuántos divisores positivos tiene.
+
+Si el número introducido no es positivo, deberá volver a solicitarse.
+
+Ejemplo:
+Introduce un número positivo: 12
+El número 12 tiene 6 divisores.
+
+
+Ejercicio 13. Invertir el orden de las cifras
+Realizar un programa que lea un número entero positivo y muestre sus cifras en orden inverso.
+
+Ejemplos:
+Introduce un número positivo: 1234
+El número invertido es: 4321
+
+
+Si el número introducido no es positivo, deberá volver a solicitarse.
+
+Ejercicio 14. Encontrar el primer múltiplo
+Realizar un programa que solicite dos números enteros positivos, numeroA y numeroB. A continuación, deberá buscar y mostrar el primer múltiplo de numeroA que sea mayor o igual que numeroB.
+
+Si alguno de los datos introducidos no es positivo, deberá volver a solicitarse.
+
+Ejemplo:
+Introduce el primer número: 4
+Introduce el segundo número: 17
+El primer múltiplo encontrado es: 20
+
+
+Ejercicio 15. Adivinar un número
+Realizar un programa que solicite un número secreto y, a continuación, permita introducir números para intentar adivinarlo.
+
+Después de cada intento, el programa deberá indicar si el número introducido es mayor o menor que el número secreto. El programa finalizará cuando se acierte y mostrará el número de intentos realizados.
+
+Nota: Para este ejercicio, el número secreto se introduce al principio del programa y no cambia durante el juego.

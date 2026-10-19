@@ -1,0 +1,34 @@
+COMANDOS GIT
+git clone url . -> clonar el repositorio en la carpeta sin el nombre del repositorio (sin el punto se crea una carpeta con el nombre del repositorio)
+git init -> cuando iniciamos un git vacio esto es para iniciarlo
+git remote add origin url -> para unir el git con el repositorio (el origin es el alias q le damos)
+git pull origin main -> para traer todo el contenido de origin (el repositorio)
+git status -> para ver el estado de los ficheros (rojo (hay cambios no confirmados (add)), verde (cambios confirmados(commit)))
+git add nameFile -> para confirmar los cambios de un fichero en concreto
+git add . -> para confirmar los cambios de todos los ficheros
+git commit -m "text" -> para empaquetar todos los ficheros (con mensaje obligatorio, sino se pone te lo abre para escribir)
+git push origin main -> para enviar al origin
+touch nameFile.txt nameFile.java (para crear ficheros directamente con su terminacion)
+touch .gitignore (un fichero para q git ignore el contenido)
+git diff -> para ver los cambios que se ha hecho antes de guardar
+git diff --staged -> para ver los cambios que se han hecho en toda la caja antes del stage (antes de hacer el commit)
+
+
+
+INTELLIJ ATAJOS
+maina -> static void main(String[] args) {}
+sout -> System.out.println();
+fori -> genera el for entero
+ctrl + alt + l -> ordenar codigo
+
+shift + f6 -> le cambia el nombre a la variable en todo el código
+ctrl + alt + l -> formatea el código para dejarlo bien
+
+double num = Double.parseDouble(sc.nextLine()); -> con el nextLine lee una cadena de caracteres y lo pasa a double solo
+int num = Integer.parseInt(sc.nextLine()); ->
+
+char carácter = sc.nextLine().charAt(0); -> para introducir un char, esto introduce una linea y me da solo el primer carácter (SUSCEPTIBLE A FALLOS)
+
+System.out.println(); -> println tiene un salto de linea
+System.out.printf("n1 vale %d, n2 vale %d, d1 vale %.1f", n1, n2, d1); -> cadena formateada se introduce en la cadena %d (entero) %f (decimal, entre % y f .2 para decir el 	numero de decimales que quiero) y dps se ponen en orden con comas
+%n o \n -> salto de linea solo en cadenas de texto para cuando no se utiliza println

@@ -1,0 +1,17 @@
+Apuntes Java
+
+Tipos de datos:
+
+Primitivos:
+int -> numeros enteros (sin decimales) 15
+double -> numeros decimales 12.34
+char -> un unico caracter 'A' (Van entre comas simples)
+boolean -> true o false
+
+Crear una variable
+
+ejemplo:
+int num1 (creo la variable)
+
+num1 = 20 (defino el valor de una variable)
+

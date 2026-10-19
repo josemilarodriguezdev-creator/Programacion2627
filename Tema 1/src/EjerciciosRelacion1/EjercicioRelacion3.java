@@ -13,9 +13,11 @@ public class EjercicioRelacion3 {
 
     public static void main(String[] args) {
 
+        int numero;
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el numero entero");
-        int numero = sc.nextInt();
+        numero = sc.nextInt();
 
         if (numero % 3 == 0) {
             System.out.println("El numero es multiplo de 3");

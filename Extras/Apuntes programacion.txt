@@ -1,17 +1,189 @@
-Apuntes Java
+Apuntes programacion tema 1
 
-Tipos de datos:
+**Tipos de datos:
 
-Primitivos:
+*Primitivos:
 int -> numeros enteros (sin decimales) 15
 double -> numeros decimales 12.34
 char -> un unico caracter 'A' (Van entre comas simples)
 boolean -> true o false
 
-Crear una variable
+**Crear una variable
 
 ejemplo:
 int num1 (creo la variable)
 
 num1 = 20 (defino el valor de una variable)
 
+**Operandos aritmeticos (signos matematicos)
+
++ (suma)
+- (resta)
+* (multiplicacion)
+/ (division)
+% (Resto de la division)
+
+**Opeadores de asignacion
+
+= asigna el valor a una variable
+
++= Suma y asigna: Suma un valor a una variable y guarda el resultado en la misma variable.
+
+-= Resta y asigna: Resta un valor a una variable y guarda el resultado en la misma variable.
+
+*= Multiplicación y asigna: Multiplica una variable por un valor y guarda el resultado en la misma variable.
+
+/= División y asigna: Divide una variable por un valor y guarda el resultado en la misma variable.
+
+**Operadores de Comparacion
+
+== Igual a: Comprueba si dos valores son iguales.
+
+!= Diferente de: Comprueba si dos valores son diferentes.
+
+> Mayor que: Comprueba si el valor de la izquierda es mayor que el de la derecha.
+
+< Menor que: Comprueba si el valor de la izquierda es menor que el de la derecha.
+
+>= Mayor o igual que: Comprueba si el valor de la izquierda es mayor o igual que el de la derecha.
+
+<= Menor o igual que: Comprueba si el valor de la izquierda es menor o igual que el de la derecha
+
+**Operadores Logicos
+
+&& and 
+
+|| or
+
+! not
+
+**-------EL SANTO GRIAL---------
+
+**-------Crear un teclado--------
+
+Scanner sc = new Scanner(System.in);
+
+**Guardar datos en el la variable del teclado
+
+Variables ejemplo:
+
+
+int numero1; (Variable par numeros)
+System.out.println("Introduce el numero entero");
+numero1 = sc.nextInt();
+
+char caracter1; (Variable para caracter)
+System.out.println("Desea introducir otro numero (S/N)");
+caracter1 = sc.nextLine().charAt(0);
+
+-aclaracion pongo el System.out.println para que pregunte antes de guardarlo.
+
+**------if else-if-------
+
+Pone una condicion, con el else if lo que hacemos es añadir otra condicion si no se cumple la anterior
+ejemplo:
+
+int numero;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el numero entero");   --> Creacion del teclado
+        numero = sc.nextInt();
+
+        if (numero % 3 == 0) { --> si el numero que he introducido por teclado dividido entre 3 el resto es igual a 0 
+            System.out.println("El numero es multiplo de 3"); --> escribe esto
+        } else if (numero % 2 == 0) { -->> si no pasa lo de arriba entonces divide el numero entre 2 y comprueba si el resto es igual a 0
+            System.out.println("El numero es multiplo de 2"); --> entonces escribe esto
+        }else{
+            System.out.println("No es multiplo de 3 ni de 2"); --> en todos los demas casos imprime esto
+        }
+
+**------switch------
+
+Lo que hace es que segun el valor de la variable que nosotros le demos imprime lo que hayamos escrito (Puede ser numeros con int o caracteres, tambien strings que son cadenas de texto)
+
+ejemplo:
+
+int dia; --> creo la variable
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Introduce un numero del dia de la semana"); --> teclado
+dia = sc.nextInt(); --> guarda el valor del teclado
+
+
+
+switch (dia) { --> lee el valor y imprime segun el numero que le pongamos
+    case 1:
+        System.out.println("Lunes");
+        break;
+
+    case 2:
+        System.out.println("Martes");
+        break;
+
+    case 3:
+        System.out.println("Miércoles");
+        break;
+
+    default:
+        System.out.println("Día no válido");
+        break;
+}
+
+
+**-----BUCLES-----
+
+**---for----
+
+sirve para repetir un bloque de código varias veces sabiendo cuantas veces queremos repetir una accion.
+
+Atajo de teclado(fori)
+for (int i = 0; i <(aqui iria el nombre de una variable o un numero) ; i++) {
+             }
+
+-ejemplo basico:
+
+for (int i = 1; i <= 5; i++) { --> creo el bucle, define la variable i que es entera por que tiene un int antes y le da el valor de 1, si i que es 1 es menor o igual que 5 le suma 1, luego se repite añadiendole +1 cada vez que se repita el bucle
+    System.out.println(i); --> imprime el valor de i cada vez que acaba el bucle es decir primero imprime 1 luego le suma 1 y imprimira 2 luego 3 etc hasta que llegue a 5 que se para el bucle.
+
+}
+
+-ejemplo avanzado con condiciones:
+
+enunciado:
+Realizar un programa que muestre por pantalla todos los números
+comprendidos entre 1 y 100 que son múltiplos de 7 o de 13. Debe mostrar
+un mensaje indicando si el número es múltiplo de 7 o de 13. Si el número
+es múltiplo de 7 y de 13 a la vez, deben aparecer dos mensajes.
+
+for (int numeros = 1; numeros <=100; numeros++){ --> en vez de llamarse i la variable en este caso la llamamos numeros, declaro la variable y le digo que vale 1, si numero es menor o igual a 100 sumale 1, asi hasta que llega a 100 
+           if (numeros % 7==0){ --> como me pide que sea multiplo de 7 lo hago de la siguiente manera si el resto del "numero"(la variable que sera del 1 al 100) entre 7 da 0 es multiplo de 7
+               System.out.printf("el numero %d es múltiplo de 7 %n", numeros);
+           }if (numeros % 13==0){ --> y aqui lo mismo con el 13
+               System.out.printf("el numero %d es múltiplo de 13 %n", numeros);
+           }
+       }
+
+el resultado al ejecutarlo sera asi:
+el numero 7 es múltiplo de 7 
+el numero 13 es múltiplo de 13 
+el numero 14 es múltiplo de 7 
+el numero 21 es múltiplo de 7 
+el numero 26 es múltiplo de 13 
+el numero 28 es múltiplo de 7 
+el numero 35 es múltiplo de 7 
+el numero 39 es múltiplo de 13 
+el numero 42 es múltiplo de 7 
+el numero 49 es múltiplo de 7 
+el numero 52 es múltiplo de 13 
+el numero 56 es múltiplo de 7 
+el numero 63 es múltiplo de 7 
+el numero 65 es múltiplo de 13 
+el numero 70 es múltiplo de 7 
+el numero 77 es múltiplo de 7 
+el numero 78 es múltiplo de 13 
+el numero 84 es múltiplo de 7 
+el numero 91 es múltiplo de 7 
+el numero 91 es múltiplo de 13 
+el numero 98 es múltiplo de 7 
+
+FALTA POR HACER EL BUCLE DO-WHILE

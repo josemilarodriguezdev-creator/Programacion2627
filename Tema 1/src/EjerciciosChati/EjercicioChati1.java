@@ -1,9 +1,9 @@
 package EjerciciosChati;
 
-public class EjercicioChati1 {
-    public static void main(String[] args){
+import java.util.Scanner;
 
-        int numeros;
+public class EjercicioChati1 {
+    public static void main(String[] args) {
 
 
     }

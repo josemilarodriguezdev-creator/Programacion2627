@@ -186,4 +186,16 @@ el numero 91 es múltiplo de 7
 el numero 91 es múltiplo de 13 
 el numero 98 es múltiplo de 7 
 
-FALTA POR HACER EL BUCLE DO-WHILE
+**----DO WHILE-----
+
+El bucle while repite una acción mientras una condición sea verdadera.
+El bucle do-while asegura que el código dentro del bucle se ejecute al menos una vez.
+La diferencia principal con for es la formula y que con for tienes que saber cuantas veces quieres repetir la accion y con while no.
+
+int numeroPositivo;
+
+ do {
+            System.out.println("Escribe un numero positivo");
+            numeroPositivo = sc.nextInt();
+                                                            --> va a guardar el numero en la variable siempre que el numero sea mayor que 1 y al tener el do al principio va a mostrar el sout antes de comprobar la condicion.
+        } while (numeroPositivo < 1);

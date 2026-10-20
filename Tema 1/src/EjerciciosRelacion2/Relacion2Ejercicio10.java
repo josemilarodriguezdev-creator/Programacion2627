@@ -8,7 +8,7 @@ package EjerciciosRelacion2;
 import java.util.Scanner;
 
 public class Relacion2Ejercicio10 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Teclado
         Scanner sc = new Scanner(System.in);
@@ -16,18 +16,17 @@ public class Relacion2Ejercicio10 {
         //variables
         int numeroEntero;
 
-        do {
-            do {
-                System.out.println("Escribe un numero positivo o 0");
-                numeroEntero = sc.nextInt();
-            }while (numeroEntero < 0);
 
-            int factorial = 1;
-            for (int i = 1; i <= numeroEntero; i++) {
-                factorial = factorial * i;
-            }
-            System.out.println("El factorial de " + numeroEntero + " es " + factorial);
-        }while (numeroEntero !=numeroEntero);
+        do {
+            System.out.println("Escribe un numero positivo o 0");
+            numeroEntero = sc.nextInt();
+        } while (numeroEntero < 0);
+
+        int factorial = 1;
+        for (int i = 2; i <= numeroEntero; i++) {
+            factorial = factorial * i;
+        }
+        System.out.println("El factorial de " + numeroEntero + " es " + factorial);
 
 
     }

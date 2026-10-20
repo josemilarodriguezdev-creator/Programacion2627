@@ -9,39 +9,40 @@ package EjerciciosRelacion2;
 import java.util.Scanner;
 
 public class Relacion2Ejercicio9 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Teclado
         Scanner sc = new Scanner(System.in);
-        
+
 
         //Variables
         int numeroPositivo;
         int sumaDivisores;
         int divisor;
-        
+
         //Bucle
+
         do {
-            do {
-                System.out.println("Escribe un numero positivo");
-                numeroPositivo = sc.nextInt();
+            System.out.println("Escribe un numero positivo");
+            numeroPositivo = sc.nextInt();
 
-            }while (numeroPositivo <=0);
+        } while (numeroPositivo < 1);
 
-            sumaDivisores = 0;
-            divisor = 1;
-
-            while (divisor <= numeroPositivo/2){
-                if (numeroPositivo % divisor ==0){
-                    sumaDivisores = sumaDivisores + divisor;
-                }
-                divisor++;
-
+        sumaDivisores = 0;
+        divisor = 1;
+        //Es partido de 2 porque desde la mitad no hay divisores.
+        while (divisor <= numeroPositivo / 2) {
+            //while (divisor < numeroPositivo){ la otra posible solución.
+            if (numeroPositivo % divisor == 0) {
+                sumaDivisores = sumaDivisores + divisor;
             }
-            if (sumaDivisores == numeroPositivo){
-                System.out.println("Es un numero perfecto");
-            }
-        }while (sumaDivisores !=numeroPositivo);
+            divisor++;
+
+        }
+        if (sumaDivisores == numeroPositivo) {
+            System.out.println("Es un numero perfecto");
+        }
+
 
     }
 }

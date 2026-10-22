@@ -38,27 +38,5 @@ public class Ejercicio1 {
 
         System.out.println("los números ordenados de menor a mayor son :" + n1 + " " + n2 + " " + n3);
 
-
-
-//        int num1;
-//        int menor = 0;
-//        boolean primerNumero = true;
-//
-//        for (int i = 0; i < 3; i++) {
-//            System.out.println("introduce un numero");
-//            num1 = sc.nextInt();
-//            if (primerNumero){
-//                menor = num1;
-//            }else{
-//                if (menor > num1){
-//                    menor = num1;
-//                }
-//            }
-//            if (i == 1){
-//                primerNumero = false;
-//            }
-//
-//        }
-//        System.out.println(menor);
     }
 }

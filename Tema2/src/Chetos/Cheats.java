@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Cheats {
 
     //-------Escáner-------
-    static Scanner sc = new Scanner(System.in);
+        static Scanner sc = new Scanner(System.in);
 
     //------Leer un String------
     public static String leerCadena(String mensaje) {

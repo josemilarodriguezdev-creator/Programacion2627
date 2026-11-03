@@ -1,4 +1,3 @@
-
 //Crea un programa que pregunte cuántos elementos tendremos en un array de
 //enteros. Posteriormente se preguntarán tantos números como haya indicado el
 //usuario. Posteriormente, mostraremos por pantalla el mayor, el menor y la media. Si
@@ -14,11 +13,38 @@
 //El menor número introducido es -1
 //La media de los números introducidos es: 5.2
 
-package EjerciciosRelacion1;
+package EjerciciosArrays1;
+
+import Chetos.Cheats;
 
 public class Ejercicio3 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+
+        int cuantosElementos;
+
+
+        cuantosElementos = Cheats.leerEntero("Cuantos elementos tiene el array? ");
+        int [] array = new int[cuantosElementos];
+        leerMayorMenorMedia(array);
 
     }
+
+    public static void leerMayorMenorMedia(int[] arrayEnteros){
+
+        int max = Integer.MIN_VALUE;
+        int contadorMax;
+        int min = Integer.MAX_VALUE;
+        int contadorMin;
+
+        for (int i = 0; i < arrayEnteros.length; i++) {
+            arrayEnteros[i] = Cheats.leerEntero("Introduce el numero " + (i+1));
+        }
+
+        for (int i = 0; i < ; i++) {
+            
+        }
+        
+    }
+
 }

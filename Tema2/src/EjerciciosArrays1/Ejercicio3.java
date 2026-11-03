@@ -25,26 +25,75 @@ public class Ejercicio3 {
 
 
         cuantosElementos = Cheats.leerEntero("Cuantos elementos tiene el array? ");
-        int [] array = new int[cuantosElementos];
-        leerMayorMenorMedia(array);
+        int [] miArray = new int[cuantosElementos];
+        leerMayorMenorMedia(miArray);
 
     }
 
     public static void leerMayorMenorMedia(int[] arrayEnteros){
 
         int max = Integer.MIN_VALUE;
-        int contadorMax;
+        int contadorMax = 0;
         int min = Integer.MAX_VALUE;
-        int contadorMin;
+        int contadorMin = 0;
+        int suma = 0;
 
         for (int i = 0; i < arrayEnteros.length; i++) {
+
             arrayEnteros[i] = Cheats.leerEntero("Introduce el numero " + (i+1));
+
         }
 
-        for (int i = 0; i < ; i++) {
-            
+        for (int i = 0; i < arrayEnteros.length; i++) {
+
+            suma += arrayEnteros[i];
+
+            if (arrayEnteros[i] > max){
+
+                max = arrayEnteros[i];
+                contadorMax = 1;
+
+            } else if (arrayEnteros[i] == max){
+
+                contadorMax++;
+
+            }
+
+            if (arrayEnteros[i] < min){
+
+                min = arrayEnteros[i];
+                contadorMin = 1;
+
+            } else if (arrayEnteros[i] == min) {
+
+                contadorMin++;
+
+            }
+
         }
-        
+
+        System.out.println("El mayor numero introducido es " + max);
+
+        if (contadorMax > 1){
+
+            System.out.println(" (se repite " + contadorMax + " veces)");
+
+        } else {
+            System.out.println();
+        }
+
+        System.out.println("El menor numero introducido es " + min);
+
+        if (contadorMin > 1) {
+            System.out.println(" (se repite " + contadorMin + " veces)");
+        } else {
+            System.out.println();
+        }
+
+        double media = (double) suma / arrayEnteros.length;
+
+        System.out.println("La media de los números introducidos es: " + media);
+
     }
 
 }

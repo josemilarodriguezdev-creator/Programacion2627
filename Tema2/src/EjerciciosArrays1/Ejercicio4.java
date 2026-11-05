@@ -40,9 +40,13 @@ public class Ejercicio4 {
 
         //Creo una forma de crear un número aleatorio
         Random r = new Random();
+
+        //Creo la variable suma
         int suma = 0;
 
+        //Pongo que el array tenga diez posiciones
         int[] terminaciones = new int[10];
+
 
         for (int i = 0; i < TOTAL_NUMEROS; i++) {
 
@@ -53,6 +57,37 @@ public class Ejercicio4 {
             terminaciones[numeroAleatorio % 10]++;
 
         }
+
+        int max = -1;
+        int posicionMax = 0;
+        int posicionMin = 0;
+        int min = Integer.MAX_VALUE;
+
+        System.out.println("La media de los números es: " + (double) suma / TOTAL_NUMEROS);
+
+        for (int i = 0; i < terminaciones.length; i++) {
+            if (terminaciones[i] > max){
+                max = terminaciones[i];
+                posicionMax = i;
+            }
+        }
+        for (int i = 0; i < terminaciones.length; i++) {
+            if (terminaciones[i] < min){
+                min = terminaciones[i];
+                posicionMin = i;
+            }
+        }
+        for (int i = 0; i < terminaciones.length; i++) {
+
+            System.out.printf("El nº %d se ha repetido %d veces. Esto equivale a un %f%% %n" ,i, terminaciones[i], (double) terminaciones[i] / TOTAL_NUMEROS * 100);
+
+        }
+
+        System.out.println("El digito que mas se repitio es: " + posicionMax);
+        System.out.println("Se repitió: " + max + " veces");
+
+        System.out.println("El digito que menos se repitio es: " + posicionMin);
+        System.out.println("Se repitió: " + min + " veces");
 
     }
 

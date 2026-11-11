@@ -1,5 +1,5 @@
 
-//Crea un método contieneElemento, que acepte un array de enteros y un entero a
+//Crea un metodo contieneElemento, que acepte un array de enteros y un entero a
 //buscar, que realice la misma operación que el ejercicio anterior, y devuelva un valor
 //booleano que indique si el array contiene el elemento o no.
 

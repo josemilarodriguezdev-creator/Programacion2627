@@ -1,3 +1,8 @@
+//
+//5. Crea un metodo que reciba una matriz e imprima, en una sola línea, los elementos de la
+//misma, pero leídos por columnas:
+
+
 package EjerciciosMatrices1;
 
 public class Ejercicio5 {

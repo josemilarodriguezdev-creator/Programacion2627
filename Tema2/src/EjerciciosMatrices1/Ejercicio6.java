@@ -19,7 +19,6 @@ public class Ejercicio6 {
             for (int fila = matriz.length -1; fila >=0; fila--) {
                 System.out.print(matriz[fila][columna] + " ");
             }
-
         }
     }
 }

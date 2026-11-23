@@ -12,10 +12,10 @@ public class Ejercicio16 {
 
         int[][] matrizRes = casillasAdyacentesPares(matriz);
 
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
+        for (int filas = 0; filas < matriz.length; filas++) {
+            for (int columnas = 0; columnas < matriz[filas].length; columnas++) {
 
-                System.out.print(matrizRes[i][j] + " ");
+                System.out.print(matrizRes[filas][columnas] + " ");
             }
             System.out.println();
         }
